@@ -98,6 +98,8 @@ export default function ThirdStage() {
         }
     }, [battleMessages]) // Sempre que as mensagens mudam, rola até o final
 
+    console.log(player1)
+
     return (
         <div className="w-full h-screen flex justify-between items-start text-white gap-10">
             <div className="h-screen flex flex-col gap-16 items-center mt-5">
@@ -121,14 +123,14 @@ export default function ThirdStage() {
                                 </div>
                                 <img
                                     className="w-72 h-60"
-                                    src={player1!.avatar ?? `/images/${player1?.avatar}`}
+                                    src={player1!.avatar}
                                     alt={`${player1!.name} image`}
                                 />
                             </div>
                         ) : (
                             <img
                                 className="w-72 h-60"
-                                src={player1!.avatar ?? `/images/${player1?.avatar}`}
+                                src={player1!.avatar}
                                 alt={`${player1!.name} image`}
                             />
                         )}
