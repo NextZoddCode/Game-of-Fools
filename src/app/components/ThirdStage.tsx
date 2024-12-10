@@ -123,14 +123,14 @@ export default function ThirdStage() {
                                 </div>
                                 <img
                                     className="w-72 h-60"
-                                    src={player1!.avatar}
+                                    src={player1!.avatar ?? `/images/${player1?.avatar}`}
                                     alt={`${player1!.name} image`}
                                 />
                             </div>
                         ) : (
                             <img
                                 className="w-72 h-60"
-                                src={player1!.avatar}
+                                src={player1!.avatar ?? `/images/${player1?.avatar}`}
                                 alt={`${player1!.name} image`}
                             />
                         )}
@@ -158,6 +158,7 @@ export default function ThirdStage() {
                         )}
                     </>
                 )}
+
                 <div className="w-full flex flex-col gap-2">
                     <div className="w-full flex justify-center items-center gap-3">
                         <span>
