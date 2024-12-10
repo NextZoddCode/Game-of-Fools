@@ -128,7 +128,7 @@ export default function ThirdStage() {
                         ) : (
                             <img
                                 className="w-72 h-60"
-                                src={player1!.image ?? `/images/${player1?.image}`}
+                                src={player1!.avatar ?? `/images/${player1?.avatar}`}
                                 alt={`${player1!.name} image`}
                             />
                         )}
