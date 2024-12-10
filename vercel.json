@@ -5,5 +5,5 @@
             "use": "@vercel/node"
         }
     ],
-    "installCommand": "npm install --legacy-peer-deps"
+    "installCommand": "npm install --force"
 }
