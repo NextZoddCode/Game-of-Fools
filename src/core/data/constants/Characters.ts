@@ -34,7 +34,7 @@ export const characters: CharacterProps[] = [
         name: 'sarkani',
         image: '/images/sarkani.jpg',
         avatar: '/images/sarkaninariz.jpg',
-        audio: '',
+        audio: '/audios/sarkaniaudio.ogg',
         strength: 8,
         defense: 5,
         luck: 7,
